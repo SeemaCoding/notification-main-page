@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- <link
+      href="https://fonts.google.com/specimen/Plus+Jakarta+Sans"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="title">
+          <h2 class="heading-primary">Notifications</h2>
+          <span class="number">3</span>
+        </div>
+        <p class="mark_all">Mark all as read</p>
+      </header>
+      <main class="info grid-1--col">
+        <div class="post-info unread">
+          <img
+            class="img"
+            src="assets/images/avatar-mark-webber.webp"
+            alt="photo of markwebber "
+          />
+
+          <div class="post-details">
+            <p class="post-notification">
+              <strong>Mark Webber</strong> reacted to your recent post
+              <a href="#">My first tournament today!</a>
+              <ion-icon class="dot" name="ellipse"></ion-icon>
+            </p>
+            <p class="post-time">1m ago</p>
+          </div>
+        </div>
+        <div class="post-info unread">
+          <img
+            class="img"
+            src="assets/images/avatar-angela-gray.webp"
+            alt="photo of markwebber "
+          />
+
+          <div class="post-details">
+            <p class="post-notification">
+              <strong>Angela Gray</strong> followed you
+              <ion-icon class="dot" name="ellipse"></ion-icon>
+            </p>
+            <p class="post-time">5m ago</p>
+          </div>
+        </div>
+        <div class="post-info unread">
+          <img
+            class="img"
+            src="assets/images/avatar-jacob-thompson.webp"
+            alt="photo of markwebber "
+          />
+
+          <div class="post-details">
+            <p class="post-notification">
+              <strong>Jacob Thompson</strong> has joined your group
+              <a href="#">Chess Club</a
+              ><ion-icon class="dot" name="ellipse"></ion-icon>
+            </p>
+            <p class="post-time">1 day ago</p>
+          </div>
+        </div>
+        <div class="post-info">
+          <div class="message-post">
+            <img
+              class="img"
+              src="assets/images/avatar-rizky-hasanuddin.webp"
+              alt="photo of markwebber "
+            />
+
+            <div class="post-details">
+              <p class="post-notification">
+                <strong> Rizky Hasanuddin</strong> sent you a private message
+              </p>
+              <p class="post-time">5 days ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="grid-3--col"> -->
+        <div class="post-msg">
+          <p>
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div>
+
+        <div class="post-info post-white">
+          <img
+            class="img"
+            src="assets/images/avatar-kimberly-smith.webp"
+            alt="photo of markwebber "
+          />
+
+          <div class="post-details">
+            <p class="post-notification">
+              <strong>Kimberly Smith</strong> commented on your picture
+            </p>
+            <p class="post-time">1 week ago</p>
+          </div>
+
+          <img
+            class="img2"
+            src="assets/images/image-chess.webp"
+            alt="girl with a chess board"
+          />
+        </div>
+        <div class="post-info post-white">
+          <img
+            class="img"
+            src="assets/images/avatar-nathan-peterson.webp"
+            alt="photo of markwebber "
+          />
+
+          <div class="post-details">
+            <p class="post-notification">
+              <strong>Nathan Peterson</strong> reacted to your recent post
+              <strong> end-game strategies to increase your win rate </strong>
+            </p>
+            <p class="post-time">2 weeks ago</p>
+          </div>
+        </div>
+        <div class="post-info post-white">
+          <img
+            class="img"
+            src="assets/images/avatar-anna-kim.webp"
+            alt="photo of markwebber "
+          />
+
+          <div class="post-details">
+            <p class="post-notification">
+              <strong>Anna Kim</strong> left the group
+              <a href="#">Chess Club</a>
+            </p>
+            <p class="post-time">2 weeks ago</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Seema</a>.
+    </div>
+  </body>
+</html>

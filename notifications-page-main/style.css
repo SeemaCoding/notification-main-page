@@ -1,0 +1,185 @@
+/* - Font sizes (px) 
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.body {
+  background-color: var(--Very-light-grayish-blue);
+}
+.container {
+  background-color: var(--White);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 3.2rem 4.8rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.2;
+  margin-bottom: 2 rem;
+}
+
+.heading-primary {
+  font-size: 2rem;
+  color: black;
+  font-weight: 800;
+}
+
+span {
+  background-color: var(--Blue);
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 800;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.mark_all {
+  font-size: 2rem;
+
+  font-weight: 500;
+  cursor: pointer;
+}
+.mark_all:hover {
+  color: var(--Blue);
+}
+p {
+  color: var(Dark-grayish-blue);
+  font-size: 1.6rem;
+}
+strong {
+  color: var(--Very-dark-blue);
+  cursor: pointer;
+}
+
+strong:hover {
+  color: var(--Blue);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post-info {
+  display: flex;
+
+  padding: 1rem;
+  align-items: center;
+  gap: 2.4rem;
+
+  border-radius: 1rem;
+}
+
+.img {
+  width: 5rem;
+}
+
+.post-details {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.3rem;
+  /* flex-grow: 1; */
+}
+.unread {
+  background-color: var(--Light-grayish-blue-1) !important;
+}
+
+.message-post {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.post-msg {
+  border: 1px solid var(--Light-grayish-blue-2);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0 0 0 9rem;
+  padding: 2rem 1rem;
+}
+
+.post-msg:hover {
+  background-color: var(--Light-grayish-blue-1);
+}
+
+.img2 {
+  margin-left: auto;
+  width: 5rem;
+}
+
+a:link,
+a:hover {
+  color: var(--Blue);
+  text-decoration: none;
+  font-weight: 800;
+}
+a:visited {
+  background-color: var(--Very-dark-blue);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  color: var(--Red);
+}
+
+/*****************************************/
+/*  below 544px */
+/*****************************************/
+
+@media (max-width: 34rem) {
+  .container {
+    margin: 0;
+    padding: 2.4rem 1.2rem;
+  }
+  .heading-primary {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    gap: 0.8rem;
+  }
+
+  .mark_all {
+    font-size: 1.8rem;
+  }
+}
